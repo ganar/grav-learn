@@ -102,6 +102,23 @@ And the French:
 Un exemple d’article             Juillet 2015
 ```
 
+
+### Displaying page summary without formatting
+
+##### Problem:
+
+You want to display the summary of a page without the paragraph tag (`<p></p>`).
+
+##### Solution:
+
+Use the  `striptags` filter to remove the tags from the summary:
+
+```
+<h5>{{ page.summary|striptags}}</h5>
+
+```
+
+
 ### Displaying page content without summary
 
 ##### Problem:
